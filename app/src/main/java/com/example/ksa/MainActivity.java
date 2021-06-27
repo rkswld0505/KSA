@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity
         {
 
 
-            if(i==0) // 감지중 test
+            if(i==0) // 감지중 t
             {
                 ImageView LoadImg = (ImageView)findViewById(R.id.load_img); //iv.setImageResource(R.drawable.img);
                 Glide.with(LoadImg).load(R.drawable.loading).into(LoadImg);
