@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
@@ -16,27 +17,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
         <!--android:background="@color/black"-->
-
 
         <ImageView
             android:layout_width="347dp"
             android:layout_height="269dp"
             android:layout_margin="30dp"
             android:src="@drawable/loading1" />
-
-        <TextView
-            android:id="@+id/detect_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="150dp"
-            android:text="감지시작" />
 
 
         <ImageView
@@ -46,22 +39,43 @@
             android:layout_margin="30dp"
             android:baselineAligned="false" />
 
-        <ImageView
-            android:id="@+id/ambulance_png"
-            android:layout_width="347dp"
-            android:layout_height="269dp"
-            android:layout_margin="30dp"
-            android:src="@drawable/ambulance" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="328dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+        <!--android:background="@color/black"-->
 
         <Button
             android:id="@+id/detect_button"
-            android:layout_width="311dp"
-            android:layout_height="233dp"
+            android:layout_width="83dp"
+            android:layout_height="95dp"
+
             android:layout_margin="55dp"
-            android:background="#00ff0000"
-            android:textColor="@color/black" />
+            android:background="@drawable/start"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="593dp" />
 
-
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="83dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            android:layout_margin="55dp"
+            android:background="@drawable/stop"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="593dp" />
     </FrameLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
